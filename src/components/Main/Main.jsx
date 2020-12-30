@@ -9,7 +9,7 @@ import useStyles from "./styles";
 
 const Main = () => {
   const styles = useStyles();
-  const { Total } = useContext(ExpenseTrackerContext);
+  const { transactions } = useContext(ExpenseTrackerContext);
 
   return (
     <div>
@@ -17,17 +17,9 @@ const Main = () => {
         <CardHeader title="Expense Tracker" subheader="Powered By Speechly" />
         <CardContent>
           <Typography variant="h5" align="center">
-            ${Total ? Total : 0}
+            $0
           </Typography>
-          <Typography
-            variant="subtitle1"
-            style={{
-              lineHeight: "1.5em",
-              marginTop: "20px",
-            }}
-          >
-            Speechly Logic
-          </Typography>
+
           <Divider />
           <Form />
         </CardContent>

@@ -14,7 +14,7 @@ function App() {
         spacing={0}
         justify="center"
         alignItems="center"
-        style={{ height: "100vh" }}
+        style={{ height: "95vh", marginBottom: "4rem" }}
         className={styles.grid}
       >
         <Grid item lg={4} sm={3} xs={12}>

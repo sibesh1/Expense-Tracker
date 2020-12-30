@@ -34,11 +34,6 @@ const Form = () => {
 
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12}>
-        <Typography align="center" variant="subtitle2" gutterBottom>
-          Placeholder
-        </Typography>
-      </Grid>
       <Grid item xs={6}>
         <FormControl fullWidth>
           <InputLabel>Type</InputLabel>
