@@ -23,8 +23,8 @@ function App() {
         <Grid item lg={3} sm={4} xs={12}>
           <Main />
         </Grid>
-        <Grid item lg={4} sm={3} xs={12} title="Expense">
-          <Details />
+        <Grid item lg={4} sm={3} xs={12}>
+          <Details title="Expense" />
         </Grid>
       </Grid>
     </div>
