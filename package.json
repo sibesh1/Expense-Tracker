@@ -1,6 +1,7 @@
 {
   "name": "expense-tracker",
   "version": "0.1.0",
+  "author": "Sibesh Behera",
   "private": true,
   "homepage": "https://sibesh1.github.io/Expense-Tracker",
   "dependencies": {
