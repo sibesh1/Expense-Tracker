@@ -11,10 +11,10 @@ const Details = ({ title }) => {
   const styles = useStyles();
   const { Total, chartData } = useTransactions(title);
   return (
-    <div style={{ margin: "0" }}>
+    <div style={{ margin: "0", textAlign: "center" }}>
       <Card className={title === "Income" ? styles.income : styles.expense}>
-        <CardHeader title={title} />
-        <CardContent>
+        <CardHeader title={title} style={{ padding: "0.2rem" }} />
+        <CardContent style={{ paddingTop: "0.5rem" }}>
           <Typography variant="h5">${Total}</Typography>
           <Doughnut data={chartData} />
         </CardContent>

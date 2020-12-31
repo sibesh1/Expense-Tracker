@@ -4,6 +4,7 @@ import { Typography, Button, MenuItem, Select } from "@material-ui/core";
 import { v4 as uuidv4 } from "uuid";
 
 import formatDate from "../../../utils/formatDate";
+import notification from "../../../utils/alertify";
 import { ExpenseTrackerContext } from "../../Context/context";
 import { incomeCategories, expenseCategories } from "../../../constants/category";
 import useStyles from "./styles";
@@ -28,6 +29,7 @@ const Form = () => {
   //clickHandler for submit button
   const createTransaction = () => {
     let data = { ...formData, id: uuidv4() };
+    notification();
     addTransaction(data);
     setFormData(initialState);
   };

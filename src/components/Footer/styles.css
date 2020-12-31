@@ -1,0 +1,10 @@
+.footer,
+a {
+  text-align: center;
+  color: #02111b;
+  font-size: large;
+}
+a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
